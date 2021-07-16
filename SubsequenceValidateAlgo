@@ -1,0 +1,20 @@
+int i =0, j;
+		if (array.size() < sequence.size()){
+			return false;
+		}else{
+					for (j=0; j < array.size();j++){
+							if(i == sequence.size()) {
+								return true;
+							}else{
+							if(array.get(j) == sequence.get(i)){
+							i++;
+						}
+					}
+				}
+			if (i==0){
+				return false;
+			}else if(i == sequence.size()){
+				return true;
+			}
+			return false;
+			}
